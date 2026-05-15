@@ -25,8 +25,8 @@
 
 - [X] T001 Create project directory structure per plan.md
 - [X] T002 Initialize Python project with FastAPI and SQLAlchemy dependencies
-- [ ] T003 [P] Configure pytest testing framework
-- [ ] T004 [P] Setup basic HTML/CSS/JS frontend structure
+- [X] T003 [P] Configure pytest testing framework
+- [X] T004 [P] Setup basic HTML/CSS/JS frontend structure
 
 ---
 
@@ -36,11 +36,11 @@
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T005 Setup SQLite database with SQLAlchemy engine configuration
-- [ ] T006 [P] Create base database models (User) in backend/src/models/user.py
-- [ ] T007 [P] Implement authentication service framework in backend/src/services/auth.py
-- [ ] T008 Setup FastAPI application with session middleware
-- [ ] T009 Configure error handling and response models
+- [X] T005 Setup SQLite database with SQLAlchemy engine configuration
+- [X] T006 [P] Create base database models (User) in backend/src/models/user.py
+- [X] T007 [P] Implement authentication service framework in backend/src/services/auth.py
+- [X] T008 Setup FastAPI application with session middleware
+- [X] T009 Configure error handling and response models
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in parallel
 
@@ -54,13 +54,13 @@
 
 ### Implementation for User Story 1
 
-- [ ] T010 [US1] Implement User model with validation in backend/src/models/user.py
-- [ ] T011 [US1] Implement auth service with password hashing in backend/src/services/auth.py
-- [ ] T012 [US1] Create signup endpoint in backend/src/api/auth.py
-- [ ] T013 [US1] Create login endpoint in backend/src/api/auth.py
-- [ ] T014 [US1] Create logout endpoint in backend/src/api/auth.py
-- [ ] T015 [US1] Add signup/login HTML forms in frontend/templates/auth.html
-- [ ] T016 [US1] Add basic CSS styling for auth forms in frontend/static/css/auth.css
+- [X] T010 [US1] Implement User model with validation in backend/src/models/user.py
+- [X] T011 [US1] Implement auth service with password hashing in backend/src/services/auth.py
+- [X] T012 [US1] Create signup endpoint in backend/src/api/auth.py
+- [X] T013 [US1] Create login endpoint in backend/src/api/auth.py
+- [X] T014 [US1] Create logout endpoint in backend/src/api/auth.py
+- [X] T015 [US1] Add signup/login HTML forms in frontend/templates/auth.html
+- [X] T016 [US1] Add basic CSS styling for auth forms in frontend/static/css/auth.css
 
 **Checkpoint**: At this point, User Story 1 should be fully functional and testable independently
 
@@ -74,14 +74,14 @@
 
 ### Implementation for User Story 2
 
-- [ ] T017 [US2] Implement Wishlist model in backend/src/models/wishlist.py
-- [ ] T018 [US2] Implement WishlistItem model in backend/src/models/wishlist_item.py
-- [ ] T019 [US2] Implement wishlist service in backend/src/services/wishlist.py
-- [ ] T020 [US2] Create dashboard endpoint in backend/src/api/dashboard.py
-- [ ] T021 [US2] Create wishlist CRUD endpoints in backend/src/api/wishlist.py
-- [ ] T022 [US2] Add dashboard HTML template in frontend/templates/dashboard.html
-- [ ] T023 [US2] Add wishlist management HTML in frontend/templates/wishlist.html
-- [ ] T024 [US2] Add CSS styling for dashboard and wishlists in frontend/static/css/main.css
+- [X] T017 [US2] Implement Wishlist model in backend/src/models/wishlist.py
+- [X] T018 [US2] Implement WishlistItem model in backend/src/models/wishlist_item.py
+- [X] T019 [US2] Implement wishlist service in backend/src/services/wishlist.py
+- [X] T020 [US2] Create dashboard endpoint in backend/src/api/dashboard.py
+- [X] T021 [US2] Create wishlist CRUD endpoints in backend/src/api/wishlist.py
+- [X] T022 [US2] Add dashboard HTML template in frontend/templates/dashboard.html
+- [X] T023 [US2] Add wishlist management HTML in frontend/templates/wishlist.html
+- [X] T024 [US2] Add CSS styling for dashboard and wishlists in frontend/static/css/main.css
 
 **Checkpoint**: At this point, User Stories 1+2 provide a complete MVP with account management and wishlist functionality
 
