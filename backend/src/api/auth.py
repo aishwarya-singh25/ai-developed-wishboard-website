@@ -1,10 +1,11 @@
-from fastapi import APIRouter, Depends, HTTPException, Form, Request, Response
+from fastapi import APIRouter, Depends, HTTPException, Form, Request
+from fastapi.templating import Jinja2Templates
 from sqlalchemy.orm import Session
 from backend.src.database import get_db
 from backend.src.services.auth import create_user, authenticate_user
-from backend.src.schemas import UserCreate, UserLogin, MessageResponse
 
 router = APIRouter()
+templates = Jinja2Templates(directory="frontend/templates")
 
 @router.post("/signup")
 async def signup(

@@ -5,6 +5,7 @@ from starlette.middleware.sessions import SessionMiddleware
 from sqlalchemy.orm import Session
 from backend.src.database import engine, get_db, Base
 from backend.src.api import auth, dashboard, wishlist, sharing
+from backend.src.models.share_permission import SharePermission  # noqa: F401
 
 # Create database tables
 Base.metadata.create_all(bind=engine)
