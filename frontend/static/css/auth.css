@@ -1,0 +1,51 @@
+/* Authentication page styles */
+
+#auth-forms {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#auth-forms h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#auth-forms form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#auth-forms input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#auth-forms button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+}
+
+#auth-forms p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#auth-forms a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#auth-forms a:hover {
+    text-decoration: underline;
+}
+
+/* Form transitions */
+#login-form, #signup-form {
+    transition: opacity 0.3s ease;
+}
+
+#login-form.fade-out, #signup-form.fade-out {
+    opacity: 0;
+}
