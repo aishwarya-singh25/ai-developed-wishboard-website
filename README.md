@@ -49,6 +49,8 @@ Then open the app in your browser:
 http://127.0.0.1:8000
 ```
 
+<img width="1058" height="419" alt="image" src="https://github.com/user-attachments/assets/c5c82378-6c7a-40ba-9f76-e6f2e64d899b" />
+
 ## Usage
 
 1. Open the homepage.
