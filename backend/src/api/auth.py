@@ -1,4 +1,5 @@
 from fastapi import APIRouter, Depends, HTTPException, Form, Request
+from fastapi.responses import RedirectResponse
 from fastapi.templating import Jinja2Templates
 from sqlalchemy.orm import Session
 from backend.src.database import get_db
@@ -50,11 +51,11 @@ async def login(
 
     return templates.TemplateResponse("dashboard.html", {"request": request})
 
-@router.post("/logout")
+@router.api_route("/logout", methods=["GET", "POST"])
 async def logout(request: Request):
     """Logout the current user by clearing session."""
     request.session.clear()
-    return templates.TemplateResponse("auth.html", {"request": request})
+    return RedirectResponse(url="/auth", status_code=302)
 
 @router.get("/me")
 async def get_current_user(request: Request, db: Session = Depends(get_db)):
