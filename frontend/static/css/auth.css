@@ -1,40 +1,88 @@
 /* Authentication page styles */
 
+body {
+    background: radial-gradient(circle at top left, rgba(37, 99, 235, 0.14), transparent 30%), #eef4fb;
+}
+
+.container {
+    max-width: 480px;
+    margin: 60px auto;
+    padding: 34px 32px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow: 0 35px 80px rgba(15, 23, 42, 0.08);
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    letter-spacing: -0.03em;
+}
+
+.container p {
+    text-align: center;
+    color: #475569;
+    margin-bottom: 30px;
+}
+
 #auth-forms {
-    max-width: 400px;
-    margin: 0 auto;
+    width: 100%;
 }
 
 #auth-forms h2 {
-    text-align: center;
-    margin-bottom: 20px;
+    text-align: left;
+    margin-bottom: 18px;
+    color: #111827;
 }
 
 #auth-forms form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    display: grid;
+    gap: 16px;
 }
 
 #auth-forms input {
     width: 100%;
-    box-sizing: border-box;
+    padding: 14px 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 16px;
+    background: #f8fafc;
+    color: #111827;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#auth-forms input:focus {
+    outline: none;
+    border-color: rgba(37, 99, 235, 0.7);
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.08);
 }
 
 #auth-forms button {
     width: 100%;
-    padding: 12px;
+    padding: 14px 18px;
+    border-radius: 16px;
+    background: #2563eb;
     font-size: 16px;
+    font-weight: 700;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#auth-forms button:hover {
+    background: #1d4ed8;
 }
 
 #auth-forms p {
     text-align: center;
     margin-top: 20px;
+    color: #475569;
 }
 
 #auth-forms a {
-    color: #007bff;
+    color: #2563eb;
     text-decoration: none;
+    font-weight: 600;
 }
 
 #auth-forms a:hover {
@@ -48,4 +96,11 @@
 
 #login-form.fade-out, #signup-form.fade-out {
     opacity: 0;
+}
+
+@media (max-width: 520px) {
+    .container {
+        margin: 30px 16px;
+        padding: 28px;
+    }
 }
