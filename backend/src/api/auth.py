@@ -50,7 +50,7 @@ async def login(
 
     return templates.TemplateResponse("dashboard.html", {"request": request})
 
-@router.post("/logout")
+@router.api_route("/logout", methods=["GET", "POST"])
 async def logout(request: Request):
     """Logout the current user by clearing session."""
     request.session.clear()
